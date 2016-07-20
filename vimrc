@@ -1,0 +1,237 @@
+" TABLE OF CONTENTS
+"
+" 1. VUNDLE
+"   1.1) Language
+"   1.2) Completion
+"   1.3) Code display
+"   1.4) Integrations
+"   1.5) Interface
+"   1.6) Commands
+"   1.7) Other
+"
+" 2. UI TWEAKS
+"   2.1) Syntax highlighting
+"   2.2) Tabs, indentation and lines
+"   2.3) Interactions
+"   2.4) Visual decorations
+"
+" 3. KEYBOARD SHORTCUT SETUP
+"
+" 4. VIM ENVIRONMENT HANDLING TWEAKS (NEEDS WORK / RENAMING)
+"
+" 5. FILE NAVIGATION
+"
+" 6. AUTO COMMANDS
+"   6.1) Filetypes
+"   6.1) Normalization
+
+" ------------------------------------------------------------------------------
+" 1. VUNDLE
+" ------------------------------------------------------------------------------
+
+set nocompatible              " required for Vundle
+filetype off                  " required for Vundle
+
+" Initialize vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+
+" Let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" --------------------------------------
+" 1.1 Language
+" --------------------------------------
+
+" HTML
+Plugin 'othree/html5.vim'
+
+" CSS
+Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'cakebaker/scss-syntax.vim'
+
+" JavaScript
+Plugin 'pangloss/vim-javascript'
+
+" Markdown
+" Markdown is now included in vim, but by default .md is read as Modula-2
+" files.  This fixes that
+autocmd BufNewFile,BufReadPost *.md,*.markdown set filetype=markdown
+autocmd FileType markdown set tw=80
+
+" JEKYLL
+Plugin 'tpope/vim-liquid'
+
+
+" --------------------------------------
+" 1.2 Completion
+" --------------------------------------
+
+
+
+" --------------------------------------
+" 1.3 Code display
+" --------------------------------------
+
+Plugin 'tomasr/molokai'
+
+" --------------------------------------
+" 1.4 Integrations
+" --------------------------------------
+
+" --------------------------------------
+" 1.5 Interface
+" --------------------------------------
+
+Plugin 'scrooloose/nerdtree'
+
+" --------------------------------------
+" 1.6 Commands
+" --------------------------------------
+
+" --------------------------------------
+" 1.7 Other
+" --------------------------------------
+
+
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+
+
+
+" ------------------------------------------------------------------------------
+" 2. UI TWEAKS
+" ------------------------------------------------------------------------------
+
+" --------------------------------------
+" 2.1 Syntax highlighting
+" --------------------------------------
+
+" Detect filetype
+filetype plugin on
+
+" Enable syntax highighting
+syntax enable
+
+
+" --------------------------------------
+" 2.2 Tabs, indentation and lines
+" --------------------------------------
+
+filetype plugin indent on
+
+" 4 spaces
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+" Round indent to nearest multiple of 4
+set shiftround
+
+" No line-wrapping
+set nowrap
+
+
+" --------------------------------------
+" 2.3 Interactions
+" --------------------------------------
+
+" Start scrolling slightly before the cursor reaches an edge
+set scrolloff=3
+set sidescrolloff=5
+
+" Scroll sideways a character at a time, rather than a screen at a time
+set sidescroll=1
+
+" Allow motions and back-spacing over line-endings etc
+set backspace=indent,eol,start
+set whichwrap=h,l,b,<,>,~,[,]
+
+" Underscores denote words
+set iskeyword-=_
+
+
+" --------------------------------------
+" 2.4 Visual decorations
+" --------------------------------------"
+
+" Show status line
+set laststatus=2
+
+" Show what mode you’re currently in
+set showmode
+
+" Show what commands you’re typing
+set showcmd
+
+" Allow modelines
+set modeline
+
+" Show current line and column position in file
+set ruler
+
+" Show file title in terminal tab
+set title
+
+" Set relative line numbers if we can...
+if exists("+relativenumber")
+    " Due to a problem with relative line numbers not persisting across new
+    " tabs and splits, set no line numbers at all...
+    set nonumber
+    " ..then set relative ones.
+    set relativenumber
+" ...otherwise let’s just have regular ones.
+else
+    set number
+endif
+
+" Limit line-length to 80 columns by highlighting col 81 onward
+if exists("+colorcolumn")
+    set colorcolumn=81
+endif
+
+" Highlight current line
+set cursorline
+
+" Don’t keep results highlighted after searching...
+set nohlsearch
+
+" ...just highlight as we type
+set incsearch
+
+" Ignore case when searching...
+set ignorecase
+
+" ...except if we input a capital letter
+set smartcase
+
+
+
+" ------------------------------------------------------------------------------
+" 3. KEYBOARD SHORTCUT SETUP
+" ------------------------------------------------------------------------------
+
+"Disable arrow keys force using h,j,k,l
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+
+" ------------------------------------------------------------------------------
+" 4. VIM ENVIRONMENT HANDLING TWEAKS (NEEDS WORK / RENAMING)
+" ------------------------------------------------------------------------------
+
+" ------------------------------------------------------------------------------
+" 5. FILE NAVIGATION
+" ------------------------------------------------------------------------------
+
+" ------------------------------------------------------------------------------
+" 6. AUTO COMMANDS
+" ------------------------------------------------------------------------------

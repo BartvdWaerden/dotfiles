@@ -1,0 +1,71 @@
+# working files
+.vim/viminfo
+.vim/swaps/*
+.vim/undo
+
+# OSX generated files
+.DS_Store
+.DS_Store?
+Desktop.ini
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Gulp workflow
+node_modules
+npm-debug.log
+
+# Sass workflow
+.sass-cache
+*.css.map
+
+# Bower directories
+bower_components
+
+# Jekyll workflow
+_site/
+.sass-cache/
+.jekyll-metadata
+
+## Ignore Sublime text stuff
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
