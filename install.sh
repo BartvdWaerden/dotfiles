@@ -37,19 +37,15 @@ mkdir $HOME/Sites
 chmod +x symlink.sh
 sh symlink.sh
 
+# Set execute permission on Sublime script and runs Sublime script
 # Sync Sublime settings
 chmod +x sublime.sh
 sh sublime.sh
 
-# Install Gulp
-npm install --global gulp-cli
-
-# Install Bower
-npm install -g bower
-
-# Install Sass
-gem install sass
-
+# Set execute permission on development script and runs development script
+# Setup development dependencies
+chmod +x development.sh
+sh development.sh
 
 # Set OS X preferences
 # We will run this last because this will reload the shell

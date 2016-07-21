@@ -17,7 +17,6 @@ brew 'nvm'
 brew 'ruby'
 brew 'z'
 brew 'zsh'
-brew 'zsh-completions'
 
 # Browsers
 cask 'firefox'
@@ -31,6 +30,7 @@ cask 'sketch-toolbox'
 # Dev
 cask 'sublime-text'
 cask 'iterm2'
+cask 'tower'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualhostx'

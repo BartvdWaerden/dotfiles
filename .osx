@@ -449,14 +449,10 @@ sudo mdutil -E / > /dev/null
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # i.e. hover over a window and start typing in it without clicking first
 #defaults write com.apple.terminal FocusFollowsMouse -bool true
 #defaults write org.x.X11 wm_ffm -bool true
-
-# Install the Solarized Dark theme for iTerm
-open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
@@ -483,14 +479,6 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 
 # Show all processes in Activity Monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
-
-# Sets columns for all tabs
-defaults read com.apple.ActivityMonitor "UserColumnsPerTab v5.0" -dict \
-    '0' '( Command, CPUUsage, CPUTime, Threads, PID, UID, Ports )' \
-    '1' '( Command, ResidentSize, Threads, Ports, PID, UID,  )' \
-    '2' '( Command, PowerScore, 12HRPower, AppSleep, UID, powerAssertion )' \
-    '3' '( Command, bytesWritten, bytesRead, Architecture, PID, UID, CPUUsage )' \
-    '4' '( Command, txBytes, rxBytes, PID, UID, txPackets, rxPackets, CPUUsage )'
 
 # Set sort column
 defaults write com.apple.ActivityMonitor UserColumnSortPerTab -dict \
