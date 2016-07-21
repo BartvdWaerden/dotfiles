@@ -57,7 +57,7 @@ source $(brew --prefix nvm)/nvm.sh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions git node npm bower brew osx extract sublime)
+plugins=(sublime)
 
 # User configuration
 
