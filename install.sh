@@ -41,6 +41,15 @@ sh symlink.sh
 chmod +x sublime.sh
 sh sublime.sh
 
+# Install Gulp
+npm install --global gulp-cli
+
+# Install Bower
+npm install -g bower
+
+# Install Sass
+gem install sass
+
 
 # Set OS X preferences
 # We will run this last because this will reload the shell

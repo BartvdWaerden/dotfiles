@@ -14,6 +14,7 @@ tap 'homebrew/bundle'
 brew 'git'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
+brew 'ruby'
 brew 'z'
 brew 'zsh'
 brew 'zsh-completions'
