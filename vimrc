@@ -258,6 +258,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+
 " ------------------------------------------------------------------------------
 " 4. VIM ENVIRONMENT HANDLING TWEAKS (NEEDS WORK / RENAMING)
 " ------------------------------------------------------------------------------
