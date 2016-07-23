@@ -69,13 +69,15 @@ Plugin 'tpope/vim-liquid'
 " 1.2 Completion
 " --------------------------------------
 
+Plugin 'mattn/emmet-vim'
 
 
 " --------------------------------------
 " 1.3 Code display
 " --------------------------------------
 
-Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
+
 
 " --------------------------------------
 " 1.4 Integrations
@@ -86,6 +88,9 @@ Plugin 'tomasr/molokai'
 " --------------------------------------
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kien/ctrlp.vim'
 
 " --------------------------------------
 " 1.6 Commands
@@ -117,6 +122,17 @@ filetype plugin on
 
 " Enable syntax highighting
 syntax enable
+
+" 256 colours please
+set t_Co=256
+
+" Dark solarized scheme
+set background=dark
+colorscheme solarized
+
+" Add powerline fonts/symbols to vim airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 
 
 " --------------------------------------
@@ -217,12 +233,26 @@ set smartcase
 " 3. KEYBOARD SHORTCUT SETUP
 " ------------------------------------------------------------------------------
 
-"Disable arrow keys force using h,j,k,l
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" Disable arrow keys force using h,j,k,l
+map  <up>    <nop>
+imap <up>    <nop>
+map  <down>  <nop>
+imap <down>  <nop>
+map  <left>  <nop>
+imap <left>  <nop>
+map  <right> <nop>
+imap <right> <nop>
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
+" Change the default mapping to invoke NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Change the default mapping and the default command to invoke CtrlP:
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " ------------------------------------------------------------------------------
 " 4. VIM ENVIRONMENT HANDLING TWEAKS (NEEDS WORK / RENAMING)
