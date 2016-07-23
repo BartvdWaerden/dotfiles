@@ -91,6 +91,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " --------------------------------------
 " 1.6 Commands
@@ -134,6 +136,8 @@ colorscheme solarized
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 
+" Turn on vim-gitgutter by default
+let g:gitgutter_enabled = 1
 
 " --------------------------------------
 " 2.2 Tabs, indentation and lines
