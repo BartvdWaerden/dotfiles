@@ -25,13 +25,11 @@ cask 'google-chrome'
 # Design
 cask 'sketch'
 cask 'sketch-tool'
-cask 'sketch-toolbox'
 
 # Dev
 cask 'sublime-text'
 cask 'iterm2'
 cask 'tower'
-cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualhostx'
 
@@ -72,6 +70,5 @@ cask 'font-pt-serif'
 # Reeder
 # Transmit
 # Tweetbot
-# Ulysses
 
 
