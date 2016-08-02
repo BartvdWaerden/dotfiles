@@ -24,28 +24,24 @@ brew bundle
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
-# Set execute permission on sublime script and runs sublime script
-chmod +x sublime.sh
-sh sublime.sh
-
 # Create a Sites directory
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
 
-# Set execute permission on symlink script and runs symlink script
-# Symlinks any specified 'dofiles' to '~/'
-chmod +x symlink.sh
-sh symlink.sh
-
 # Set execute permission on Sublime script and runs Sublime script
 # Sync Sublime settings
-chmod +x sublime.sh
-sh sublime.sh
+# chmod +x sublime.sh
+# sh sublime.sh
 
 # Set execute permission on development script and runs development script
 # Setup development dependencies
 chmod +x development.sh
 sh development.sh
+
+# Set execute permission on symlink script and runs symlink script
+# Symlinks any specified 'dofiles' to '~/'
+chmod +x symlink.sh
+sh symlink.sh
 
 # Set OS X preferences
 # We will run this last because this will reload the shell

@@ -7,7 +7,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cobalt2"
+ZSH_THEME="agnoster"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
