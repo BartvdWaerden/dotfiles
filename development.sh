@@ -4,6 +4,10 @@
 echo "Installing Gulp"
 npm install --global gulp-cli
 
+# Install Grunt 
+echo "Installing Grunt"
+npm install -g grunt-cli
+
 # Install Bower
 echo "Installing Bower"
 npm install -g bower
