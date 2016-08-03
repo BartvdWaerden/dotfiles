@@ -12,6 +12,10 @@ npm install -g grunt-cli
 echo "Installing Bower"
 npm install -g bower
 
+# Install Stylelint
+echo "Installing Stylelint CLI"
+npm install -g stylelint
+
 # Install Sass
 echo "Installing Sass"
 gem install sass
