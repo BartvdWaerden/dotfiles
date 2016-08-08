@@ -231,7 +231,8 @@ set ignorecase
 " ...except if we input a capital letter
 set smartcase
 
-
+" Automatically strip trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ------------------------------------------------------------------------------
 " 3. KEYBOARD SHORTCUT SETUP

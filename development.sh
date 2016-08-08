@@ -4,7 +4,7 @@
 echo "Installing Gulp"
 npm install --global gulp-cli
 
-# Install Grunt 
+# Install Grunt
 echo "Installing Grunt"
 npm install -g grunt-cli
 
