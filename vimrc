@@ -47,6 +47,9 @@ Plugin 'VundleVim/Vundle.vim'
 " HTML
 Plugin 'othree/html5.vim'
 
+" Jade/Pug
+Plugin 'digitaltoad/vim-jade'
+
 " CSS
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'hail2u/vim-css3-syntax'

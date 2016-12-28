@@ -101,6 +101,8 @@ alias db="cd /Volumes/Macintosh\ HD2/Dropbox/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias s="cd ~/Sites"
+alias d="cd ~/dotfiles"
+alias b="cd ~/Sites/BartvdWaerden-dev"
 
 # List all files colorized in long format, including dot files
 alias la="ls -laF"
@@ -120,3 +122,6 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias gtc='git shortlog -s | sort -rn | head'
+
+# added by travis gem
+[ -f /Users/bart/.travis/travis.sh ] && source /Users/bart/.travis/travis.sh
