@@ -157,8 +157,9 @@ set softtabstop=4
 " Round indent to nearest multiple of 4
 set shiftround
 
-" No line-wrapping
-set nowrap
+" Line-wrapping
+set wrap
+set textwidth=80
 
 
 " --------------------------------------
@@ -202,17 +203,9 @@ set ruler
 " Show file title in terminal tab
 set title
 
-" Set relative line numbers if we can...
-if exists("+relativenumber")
-    " Due to a problem with relative line numbers not persisting across new
-    " tabs and splits, set no line numbers at all...
-    set nonumber
-    " ..then set relative ones.
-    set relativenumber
-" ...otherwise let’s just have regular ones.
-else
-    set number
-endif
+" Hybrid line numbering: absolute number on current line; relative elsewhere
+set relativenumber
+set number
 
 " Limit line-length to 80 columns by highlighting col 81 onward
 if exists("+colorcolumn")
