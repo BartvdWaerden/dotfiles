@@ -103,6 +103,7 @@ alias dt="cd ~/Desktop"
 alias s="cd ~/Sites"
 alias d="cd ~/dotfiles"
 alias b="cd ~/Sites/BartvdWaerden-dev"
+alias js="cd ~/Sites/javascript"
 
 # List all files colorized in long format, including dot files
 alias la="ls -laF"
