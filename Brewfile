@@ -9,15 +9,36 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'homebrew/bundle'
+tap 'homebrew/php'
+
+# Install ZSH
+brew 'zsh'
+brew 'zsh-completions'
+
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
+
+# Install more recent versions of some macOS tools
+brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
+brew 'mas'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
 brew 'ruby'
 brew 'tmux'
-brew 'z'
-brew 'zsh'
+brew 'trash'
+brew 'vim --override-system-vim'
+brew 'wget'
 
 # Browsers
 cask 'firefox'
@@ -25,15 +46,17 @@ cask 'google-chrome'
 
 # Design
 cask 'sketch'
-cask 'sketch-tool'
 
 # Dev
+cask 'dash'
+cask 'hyper'
 cask 'iterm2'
+cask 'sequal-pro'
 cask 'sublime-text'
 cask 'tower'
-cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualhostx'
+
 
 # Utility
 cask '1password'
@@ -43,7 +66,6 @@ cask 'cleanmymac'
 cask 'delibar'
 cask 'dropbox'
 cask 'duet'
-cask 'flux'
 cask 'focus'
 cask 'marked'
 cask 'seil'
@@ -53,9 +75,9 @@ cask 'the-unarchiver'
 cask 'transmission'
 
 # Other
-cask 'garmin-express'
 cask 'spotify'
 cask 'vlc'
+cask 'whatsapp'
 
 # Fonts
 cask 'font-fira-code'
@@ -64,15 +86,12 @@ cask 'font-inconsolata-for-powerline'
 cask 'font-pt-sans'
 cask 'font-pt-serif'
 
-# Remove outdated versions from the cellar
-# brew cleanup
-
-# Not on cask but I want regardless.
-
-# Momentum
-# MoneyWiz
-# Reeder
-# Transmit
+# Install Mac App Store apps
+mas 'MoneyWiz 2 - Personal Finance', id: 949724400
+mas 'Reeder', id: 623795237
+mas 'Transmit', id: 403388562
+mas 'Tweetbot for Twitter', id: 557168941
+mas 'Ulysses', id: 880001334
 # Tweetbot
 
 
