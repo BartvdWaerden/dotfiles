@@ -8,13 +8,13 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
+tap 'homebrew/dupes'
 tap 'homebrew/bundle'
-tap 'homebrew/bundle'
-
-# tap 'homebrew/php'
+tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
+brew 'z'
 brew 'zsh-completions'
 
 # Install GNU core utilities (those that come with macOS are outdated)
@@ -31,10 +31,13 @@ brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
-brew 'curl'
+brew 'composer'
+brew 'curl', args: ['--with-openssl']
 brew 'mas'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
+brew 'php56', args: ['--with-homebrew-curl', '--with-apache']
+brew 'php56-xdebug'
 brew 'ruby'
 brew 'tmux'
 brew 'trash'

@@ -28,11 +28,6 @@ chsh -s $(which zsh)
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
 
-# Set execute permission on Sublime script and runs Sublime script
-# Sync Sublime settings
-# chmod +x sublime.sh
-# sh sublime.sh
-
 # Set execute permission on development script and runs development script
 # Setup development dependencies
 chmod +x development.sh
@@ -43,6 +38,6 @@ sh development.sh
 chmod +x symlink.sh
 sh symlink.sh
 
-# Set OS X preferences
+# Set MacOS preferences
 # We will run this last because this will reload the shell
-source .osx
+source .macos
