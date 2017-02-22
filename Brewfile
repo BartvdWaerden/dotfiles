@@ -10,12 +10,12 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/bundle'
-tap 'homebrew/php'
+
+# tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
 brew 'zsh-completions'
-
 
 # Install GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
@@ -31,6 +31,7 @@ brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'git'
+brew 'curl'
 brew 'mas'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
@@ -50,7 +51,6 @@ cask 'sketch'
 # Dev
 cask 'dash'
 cask 'hyper'
-cask 'iterm2'
 cask 'sequal-pro'
 cask 'sublime-text'
 cask 'tower'
@@ -92,6 +92,3 @@ mas 'Reeder', id: 623795237
 mas 'Transmit', id: 403388562
 mas 'Tweetbot for Twitter', id: 557168941
 mas 'Ulysses', id: 880001334
-# Tweetbot
-
-
