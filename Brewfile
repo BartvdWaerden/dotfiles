@@ -34,6 +34,7 @@ brew 'git'
 brew 'composer'
 brew 'curl', args: ['--with-openssl']
 brew 'mas'
+brew 'mysql'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
 brew 'php56', args: ['--with-homebrew-curl', '--with-apache']
