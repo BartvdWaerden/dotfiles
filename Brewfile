@@ -37,7 +37,7 @@ brew 'nvm'
 brew 'ruby'
 brew 'tmux'
 brew 'trash'
-brew 'vim --override-system-vim'
+brew 'vim', args: ['--override-system-vim']
 brew 'wget'
 
 # Browsers
