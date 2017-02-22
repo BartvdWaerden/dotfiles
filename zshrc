@@ -1,5 +1,8 @@
+# Path to your dotfiles installation.
+export DOTFILES=$HOME/.dotfiles
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/bart/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
