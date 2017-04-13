@@ -75,6 +75,9 @@ Plugin 'tpope/vim-liquid'
 " --------------------------------------
 
 Plugin 'mattn/emmet-vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'jiangmiao/auto-pairs'
+
 
 
 " --------------------------------------
