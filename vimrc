@@ -57,6 +57,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 
 " JavaScript
 Plugin 'pangloss/vim-javascript'
+Plugin 'bigfish/vim-eslint'
+Plugin 'isRuslan/vim-es6'
 
 " Markdown
 " Markdown is now included in vim, but by default .md is read as Modula-2
@@ -73,6 +75,9 @@ Plugin 'tpope/vim-liquid'
 " --------------------------------------
 
 Plugin 'mattn/emmet-vim'
+Plugin 'alvan/vim-closetag'
+Plugin 'jiangmiao/auto-pairs'
+
 
 
 " --------------------------------------
@@ -125,15 +130,21 @@ filetype plugin indent on    " required
 " Detect filetype
 filetype plugin on
 
-" Enable syntax highighting
-syntax enable
-
 " 256 colours please
 set t_Co=256
+
+" Enable syntax highighting
+syntax enable
 
 " Dark solarized scheme
 set background=dark
 colorscheme solarized
+
+" Italicised comments and attributes
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
+highlight htmlArg cterm=italic
 
 " Add powerline fonts/symbols to vim airline
 let g:airline_powerline_fonts = 1
@@ -141,6 +152,7 @@ let g:airline_theme='solarized'
 
 " Turn on vim-gitgutter by default
 let g:gitgutter_enabled = 1
+
 
 " --------------------------------------
 " 2.2 Tabs, indentation and lines

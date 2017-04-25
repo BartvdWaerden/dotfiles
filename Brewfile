@@ -8,9 +8,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
-tap 'homebrew/dupes'
 tap 'homebrew/bundle'
-tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
@@ -26,19 +24,26 @@ brew 'findutils'
 # Install Bash 4
 brew 'bash'
 
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
+# Install ZSH
+brew 'zsh'
+brew 'z'
+brew 'zsh-completions'
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
 
 # Install Binaries
 brew 'git'
-brew 'composer'
 brew 'curl', args: ['--with-openssl']
 brew 'mas'
-brew 'mysql'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
-brew 'php56', args: ['--with-homebrew-curl', '--with-apache']
-brew 'php56-xdebug'
 brew 'ruby'
 brew 'tmux'
 brew 'trash'
@@ -55,25 +60,16 @@ cask 'sketch'
 # Dev
 cask 'dash'
 cask 'hyper'
-cask 'sequal-pro'
 cask 'sublime-text'
-cask 'tower'
-cask 'virtualbox'
-cask 'virtualhostx'
-
 
 # Utility
 cask '1password'
 cask 'alfred'
-cask 'bartender'
 cask 'cleanmymac'
 cask 'delibar'
 cask 'dropbox'
 cask 'duet'
-cask 'focus'
-cask 'marked'
 cask 'seil'
-cask 'slack'
 cask 'spectacle'
 cask 'the-unarchiver'
 cask 'transmission'
@@ -93,6 +89,4 @@ cask 'font-pt-serif'
 # Install Mac App Store apps
 mas 'MoneyWiz 2 - Personal Finance', id: 949724400
 mas 'Reeder', id: 623795237
-mas 'Transmit', id: 403388562
-mas 'Tweetbot for Twitter', id: 557168941
 mas 'Ulysses', id: 880001334
