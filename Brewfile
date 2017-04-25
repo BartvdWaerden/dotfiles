@@ -24,6 +24,20 @@ brew 'findutils'
 # Install Bash 4
 brew 'bash'
 
+# Install ZSH
+brew 'zsh'
+brew 'z'
+brew 'zsh-completions'
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
+
 # Install Binaries
 brew 'git'
 brew 'curl', args: ['--with-openssl']
@@ -76,4 +90,3 @@ cask 'font-pt-serif'
 mas 'MoneyWiz 2 - Personal Finance', id: 949724400
 mas 'Reeder', id: 623795237
 mas 'Ulysses', id: 880001334
-

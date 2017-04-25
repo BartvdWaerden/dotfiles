@@ -21,17 +21,16 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Install oh my zsh
+echo "Installing oh my zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
 # Create a Sites directory
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
-
-# Set execute permission on Sublime script and runs Sublime script
-# Sync Sublime settings
-# chmod +x sublime.sh
-# sh sublime.sh
 
 # Set execute permission on development script and runs development script
 # Setup development dependencies
@@ -43,6 +42,6 @@ sh development.sh
 chmod +x symlink.sh
 sh symlink.sh
 
-# Set OS X preferences
+# Set MacOS preferences
 # We will run this last because this will reload the shell
-source .osx
+source .macos
