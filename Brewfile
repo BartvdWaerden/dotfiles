@@ -58,7 +58,6 @@ cask 'google-chrome'
 cask 'sketch'
 
 # Dev
-cask 'dash'
 cask 'hyper'
 cask 'sublime-text'
 
@@ -69,7 +68,7 @@ cask 'cleanmymac'
 cask 'delibar'
 cask 'dropbox'
 cask 'duet'
-cask 'seil'
+cask 'karabiner-elements'
 cask 'spectacle'
 cask 'the-unarchiver'
 cask 'transmission'
