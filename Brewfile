@@ -10,14 +10,31 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
+# Install ZSH
+brew 'zsh'
+brew 'z'
+brew 'zsh-completions'
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
+
 # Install Binaries
 brew 'git'
+brew 'curl', args: ['--with-openssl']
+brew 'mas'
 brew 'node' # This installs `npm` too using the recommended installation method
 brew 'nvm'
 brew 'ruby'
 brew 'tmux'
-brew 'z'
-brew 'zsh'
+brew 'trash'
+brew 'vim', args: ['--override-system-vim']
+brew 'wget'
 
 # Browsers
 cask 'firefox'
@@ -25,37 +42,28 @@ cask 'google-chrome'
 
 # Design
 cask 'sketch'
-cask 'sketch-tool'
 
 # Dev
-cask 'iterm2'
+cask 'dash'
+cask 'hyper'
 cask 'sublime-text'
-cask 'tower'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualhostx'
 
 # Utility
 cask '1password'
 cask 'alfred'
-cask 'bartender'
 cask 'cleanmymac'
 cask 'delibar'
 cask 'dropbox'
 cask 'duet'
-cask 'flux'
-cask 'focus'
-cask 'marked'
 cask 'seil'
-cask 'slack'
 cask 'spectacle'
 cask 'the-unarchiver'
 cask 'transmission'
 
 # Other
-cask 'garmin-express'
 cask 'spotify'
 cask 'vlc'
+cask 'whatsapp'
 
 # Fonts
 cask 'font-fira-code'
@@ -64,15 +72,8 @@ cask 'font-inconsolata-for-powerline'
 cask 'font-pt-sans'
 cask 'font-pt-serif'
 
-# Remove outdated versions from the cellar
-# brew cleanup
-
-# Not on cask but I want regardless.
-
-# Momentum
-# MoneyWiz
-# Reeder
-# Transmit
-# Tweetbot
-
+# Install Mac App Store apps
+mas 'MoneyWiz 2 - Personal Finance', id: 949724400
+mas 'Reeder', id: 623795237
+mas 'Ulysses', id: 880001334
 
