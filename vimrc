@@ -59,6 +59,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'bigfish/vim-eslint'
 Plugin 'isRuslan/vim-es6'
+Plugin 'mxw/vim-jsx'
 
 " Markdown
 " Markdown is now included in vim, but by default .md is read as Modula-2

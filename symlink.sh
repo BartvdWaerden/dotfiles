@@ -11,7 +11,7 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 
 # list of files/folders to symlink in homedir
-files="aliases gitignore_global vimrc zshrc stylelintrc tmux.conf hyper.js"
+files="aliases gitignore_global vimrc zshrc tmux.conf hyper.js"
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
