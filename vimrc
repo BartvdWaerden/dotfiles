@@ -154,6 +154,9 @@ let g:airline_theme='solarized'
 " Turn on vim-gitgutter by default
 let g:gitgutter_enabled = 1
 
+" Add jsx to js files
+let g:jsx_ext_required = 0
+
 
 " --------------------------------------
 " 2.2 Tabs, indentation and lines
