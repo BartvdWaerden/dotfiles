@@ -60,7 +60,7 @@ source $(brew --prefix nvm)/nvm.sh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sublime)
+plugins=(npm zsh-autosuggestions)
 
 # User configuration
 
@@ -105,8 +105,12 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias s="cd ~/Sites"
 alias d="cd ~/dotfiles"
-alias b="cd ~/Sites/BartvdWaerden-dev"
-alias js="cd ~/Sites/js-practise"
+alias b="cd ~/Sites/bartvanderwaerden"
+alias reloadzsh="source ~/.zshrc"
+
+# npm
+alias start="npm run start"
+alias build="npm run build"
 
 # List all files colorized in long format, including dot files
 alias la="ls -laF"
